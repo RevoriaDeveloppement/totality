@@ -1,0 +1,110 @@
+<html lang="fr">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+		integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<title>Boutique</title>
+	<link rel="stylesheet" href="boutique.css" />
+</head>
+
+<body>
+	<header>
+        <!-- menu responsive -->
+        
+        <div class="menu_toggle">
+            <span></span>
+        </div>
+
+        <div class="logo">
+            <p><span>Présentation</span>VIP</p>
+        </div>
+        <ul class="menu">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="boutique.html">Description VIP</a></li>
+            <li><a href="#">Catalogue Véhicule</a></li>
+            <li><a href="immo.html">Catalogue Immobilier</a></li>
+			<li class="buy_li"><a href="https://discord.gg/xGJMmxUDD6">Devenir VIP</a></li>
+        </ul>
+    </header>
+	<header2>
+		<!-- ----Barre de Navigation -->
+
+
+			<!-- Présentation du site  -->
+		<section class="presentation first">
+			<div class="product-presentation">
+				<h1>Présentation de Totality RolePlay</h1>
+				<p>Totality RolePlay est un serveur Ou l'optimisation est la priorité!
+					Une communauté sympathique sans drama et surtout adulte !
+				</p>
+				<p>En cas de soucis nos équipes vous accueillerons avec plaisir sur le discord en Besoin D'aide
+					Ou bien par Ticket!
+					Nous vous souhaitons la Bienvenue et un Agréable moment dans Notre ville
+					Cordialement le Staff</p>
+
+				<div class="small-images">
+					<div class="small">
+					<a href="https://discord.gg/xGJMmxUDD6">
+						<img src="discord.png" />
+					</a></div>
+					
+					
+					<div class="small">
+					<a href="mailto:revoriadeveloppement@gmail.com">
+						<img src="mail.png" />
+					</a></div>
+
+					<div class="small">
+					<a href="https://paypal.me/RevoriaDeveloppement?country.x=FR&locale.x=fr_FR">
+						<img src="paypal.png" />
+					</a>	
+					</div>
+				</div>
+			</div>
+			<div class="image-presentation">
+				<img src="Totality Roleplay Logo.png" />
+			</div>
+		</section>
+	</header>
+
+
+		<!-- Présentation Boutique  -->
+	<section class="presentation second">
+		<div class="product-presentation">
+			<h1>Le Packs VIP</h1>
+			<h3>Si vous souhaitez soutenir nôtre Projet Opter pour le Pass VIP</h3>
+			<p>
+			<p class="Niveau">Tarrif 15 Euros par Mois</p> Sans engagement
+			</p>
+			<p class="prixpromo"> Accès au Concessionnaire VIP 
+				avec la possibilité de crée vôtre logement a n'importe quel endroit de la carte </p>
+			<a href="https://www.paypal.com/paypalme/RevoriaDeveloppement?country.x=FR&locale.x=fr_FR"><button>Devenir VIP</button></a>
+		</div>
+		<div class="image-presentation">
+			<img src="vip.png" />
+		</div>
+	</section>
+
+		<!-- Pied de Page -->
+		<footer>
+			<p>@RevoriaDeveloppement Copyright 2023 </p>
+		</footer>
+	<script>
+        //menu responsive code JS
+
+        var menu_toggle = document.querySelector('.menu_toggle');
+        var menu = document.querySelector('.menu');
+        var menu_toggle_span = document.querySelector('.menu_toggle span');
+
+        menu_toggle.onclick = function(){
+            menu_toggle.classList.toggle('active');
+            menu_toggle_span.classList.toggle('active');
+            menu.classList.toggle('responsive') ;
+        }
+
+    </script>
+</body>
